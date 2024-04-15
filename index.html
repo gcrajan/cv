@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CV</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      margin-bottom: 5px;
+    }
+
+    ul {
+      margin-top: 0;
+      margin-bottom: 10px;
+      padding-left: 20px;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #0066cc;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #004f99;
+    }
+	.cv{
+		margin: 0rem 3rem;
+	}
+	.header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid black;
+		padding-bottom: 0.5rem;
+	}
+	.summary{
+		border-bottom: 1px solid black;
+		padding-bottom: 0.5rem;
+	}
+	.skills{
+		border-bottom: 1px solid black;
+		padding-bottom: 0.5rem;
+	}
+	.edu-link {
+		border-bottom: 1px solid black;
+		padding-bottom: 0.5rem;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.edu {
+		flex: 1; /* Take up available space */
+	}
+
+	.link {
+		flex: 1; /* Take up available space */
+		border-left: 1px solid black;
+		padding-left: 0.5rem;
+		margin: 0.5rem 0rem;
+	}
+	.professional{
+		border-bottom: 1px solid black;
+		padding-bottom: 0.5rem;
+	}
+	.personal{
+		padding-bottom: 0.5rem;
+	}
+  </style>
+</head>
+<body>
+	<button onclick="downloadCV()">Download CV</button>
+	<section class="cv">
+		<section class="header">
+			<div class="header-name">
+				<h1>Rajan GC</h1>
+			</div>
+			<div class="header-info">
+				<p><img src="" alt="logo">Gatthaghar, Bhaktapur</p>
+				<p><img src="" alt="logo">9840402206</p>
+				<p><img src="" alt="logo">coder@gcrajan.com.np</p>
+				<p><img src="" alt="logo"><a href="http://www.gcrajan.com.np">www.gcrajan.com.np</a></p>
+			</div>
+		</section>
+
+		<section class="summary">
+			<div class="title">
+				<h2>SOFTWARE ENGINEER</h2>
+			</div>
+			<div class="summary-description">
+				<p>
+					I'm a front-end developer who loves to use React and JavaScript to create UI’s that are easy to use. I transform ideas into aesthetically gorgeous web designs that function flawlessly on desktop and mobile platforms thanks to my keen eye for design and expertise with programs like Figma. Currently studying	Node.js and having some experience with MongoDB, I'm determined to keep up with the latest developments in technology. I'm excited to sharpen my abilities and contribute to cutting-edge software solutions at Bajra.
+				</p>
+			</div>
+		</section>
+
+		<section class="skills">
+			<div class="title">
+				<h3>KEY COMPETENCIES</h3>
+			</div>
+			<div class="skills-info">
+				<ul>
+					<li>Figma</li>
+					<li>HTML, CSS, JavaScript</li>
+					<li>React (Redux for state management), Next Js</li>
+					<li>MongoDB, Express, Node.js</li>
+				</ul>
+			</div>
+		</section>
+
+
+		<section class="edu-link">
+			<section class="edu">
+				<div class="title">
+					<h3>EDUCATION</h3>
+				</div>
+				<div class="edu-info">
+					<div>
+						<p>BSC. CSIT, TU</p>
+						<p>New Summit College</p>
+					</div>
+					<div>
+						<p>+2 Science</p>
+						<p>Goldengate College</p>
+					</div>
+				</div>
+			</section>
+			<section class="link">
+				<div>
+					<div class="link-title">LinkedIn:</div>
+					<div class="link-a"> <a href="https://www.linkedin.com/in/rajan-g-c-69a690199/">https://www.linkedin.com/in/rajan-g-c-69a690199/</a> </div>
+				</div>
+				<div>
+					<div class="link-title">Github:</div>
+					<div class="link-a"> <a href="https://github.com/gcrajan">https://github.com/gcrajan</a> </div>
+				</div>
+				<div>
+					<div class="link-title">Website:</div>
+					<div class="link-a"> <a href="https://www.gcrajan.com.np/">https://www.gcrajan.com.np/</a> </div>
+				</div>
+			</section>
+		</section>
+
+		<section class="professional">
+			<div class="title">
+				<h3>PROFESSIONAL EXPERIENCE</h3>
+			</div>
+			<div class="professional-info">
+				<div class="company">
+					<div>
+						<p>Tekgro - Frontend Intern</p>
+						<p>July 2023 - Oct 2023</p>
+					</div>
+					<h3>Frontend Intern</h3>
+					<div>
+						<div class="company-project">
+							<img src="" alt="">
+							<span>PSM (<a href="https://psmapp.com.au/login">https://psmapp.com.au/login</a>)</span>
+						</div>
+						<div class="company-project-info">
+							<p>Served as Frontend developer for the Customer Resource Management (CRM) projects. It is a site based in Australia where users can create forms, deals, companies, and also include vaults.</p>
+						</div>
+					</div>
+
+					<div>
+						<div class="company-project">
+							<img src="" alt="">
+							<span>ANE (<a href="https://portal.ane.edu.au/login">https://portal.ane.edu.au/login</a>)</span>
+						</div>
+						<div class="company-project-info">
+							<p>It is a Learning Management System (LMS) designed for students and teachers to interact, manage assignments, and other features for creating a complete online learning experience.</p>
+						</div>
+					</div>
+				</div>
+
+				
+			</div>
+		</section>
+	
+		<section class="personal">
+		<div class="title">
+			<h3>PERSONAL PROJECTS</h3>
+			</div>
+			<div class="personal-info">
+
+				<div>
+					<div class="personal-project">
+						<img src="" alt="">
+						<span>ShareAll</span>
+					</div>
+					<div class="personal-project-info">
+						<p>Here, you can share all your products for free. Source code: <a href="https://github.com/gcrajan/shareall">https://github.com/gcrajan/shareall</a></p>
+					</div>
+				</div>
+
+				<div>
+					<div class="personal-project">
+						<img src="" alt="">
+						<span>Digital Matadan</span>
+					</div>
+					<div class="personal-project-info">
+						<p>Online voting system (centralized). Source Code: <a href="https://github.com/gcrajan/DigitalMatadan">https://github.com/gcrajan/DigitalMatadan</a></p>
+					</div>
+				</div>
+
+				<div>
+					<div class="personal-project">
+						<img src="" alt="">
+						<span>Bank</span>
+					</div>
+					<div class="personal-project-info">
+						<p>JS project which includes array, function, and objects. Live demo: <a href="https://gcrajan-kantipurbank.netlify.app/">https://gcrajan-kantipurbank.netlify.app/</a></p>
+					</div>
+				</div>
+
+				<div>
+					<div class="personal-project">
+						<img src="" alt="">
+						<span>Online Store</span>
+					</div>
+					<div class="personal-project-info">
+						<p>Next.js assignment which includes routes and API fetching. Live demo: <a href="https://frontend-assignment-peach.vercel.app/">https://frontend-assignment-peach.vercel.app/</a></p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</section>
+
+
+	<script>
+		function downloadCV() {
+		  const element = document.querySelector('.cv');
+		  html2pdf().from(element).save('cv.pdf');
+		}
+	  </script>
+</body>
+</html>
